@@ -1,58 +1,135 @@
 body{
-    background-color: #F2EEAE;
+    background-color: #FDFFAC;
     font-family: sans-serif;
     color: #fff;
     margin:0;
 }
 .heading{
-    background-color: #732222;
+    background-color: #78A4BF;
     text-align: center;
     margin-top: 0;
     margin-bottom: 10px;
     padding: 20px;
     border: 3px solid transparent;
 }
+#hello{
+    font-family: "robotic";
+    font-size: 3rem;
+    letter-spacing: 5px;
+}
 
 .card{
-    background-color: #F27E63;
+    background-color: #9CDED0;
+    color: #899AAA;
     width: 300px;
     text-align: center;
     margin: auto;
     margin-top:30px;
-    border: 3px solid transparent;
+    margin-bottom: 50px;
+    border-top: 3px solid #9CDED0;
     border-radius: 10px;
-    box-shadow: 0 10px 30px 0 #222222
+    box-shadow: 0 10px 30px 0 #0009;
+    background: linear-gradient(#9CDED0, transparent, #9CDED0); 
+    padding: 20px;
     
 }
 
-h1{
+.card_img{
+    margin: 5px;
+    width:50%;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px 0px #444;
+}
+
+.tittle{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding-top: 10px;
     font-size: 22px;
     margin: 0;
 }
-h2{
+.subtittle{
     letter-spacing: 2px;
     font-size: 13px;
-    font-weight: 100
+    font-weight: 100;
+    text-align: center;
 }
 
-p{
-    font-size: 9px;
-    padding: 20px;
-    background-color: #F2AE72;
+.contend{
+    font-size: 11px;
+    padding: 10px;
     text-align: justify;
-    margin-bottom: 0;
-    border: 4px solid transparent;
+    margin-bottom: 0px;
+
+}
+
+.separator{
+    width: 100%;
+    height: 150px;
+    margin: 0;
+    margin-bottom: 20px;
+    background-image: url("photos/photo_alacant.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 0 -150px;
+}
+.other{
+    color:#899AAA
+}
+.opaco{
+    height: 100%;
+    width: 100%;
+    background-color: #000a
+}
+.ending{
+    color: #eee;
+    font-family: sans-serif;
+    margin:0;
+    padding: 40px 0px;
+    background: linear-gradient(to bottom, #222, #000)
+}
+form{
+    padding: 10px 0px;
+    padding-top: 5px;
+    max-width: 500px;
+    background-color: transparent;
+    margin: auto;
+    margin-top: 50px;
+    box-shadow: 0px 0px 20px #fff4;
+    border-radius: 10px;
+}
+.subtittle_2{
+    text-align: center;
+}
+.form_input{
+    padding: 6px 20px;
+
+}
+input, textarea{
+    box-sizing: border-box;
+    background-color: transparent;
+    min-width: 100%;
+    color: #eee;
+    padding: 6px 12px;
+    border: 1px solid #666;
+    box-shadow: 0px 0px 15px #0003;
+    border-radius: 4px;
+    resize: none;
+    margin-top: 5px;
+}
+
+label{
+    font-size: 15px;
+    letter-spacing: 1.5px;
+
+}
+fieldset{
+    margin: 10%;
+    border: 3px solid #eee8;
     border-radius: 10px;
 
 }
 
-input{
-    border: none;
-    background: transparent;
-    border-bottom: 2px solid greenyellow;
-    padding: 6px 9px;
-    margin: 5px;
-    color: greenyellow;
-    border-radius: 5px
+
+.tahoma{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }

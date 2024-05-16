@@ -1,0 +1,210 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    background-color: #0D0D0D;
+    color: #D9AD5B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: center;
+}
+header, .main-wrapper, footer, .nav{
+    width: 100%;
+}
+p{
+    justify-content: justify;
+    margin: 5px
+}
+
+div, nav, p, ul, img, footer{
+    box-sizing: border-box
+}
+/* ---HEADER SECTION--- */
+.header{
+    min-height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+    background-image: url("photos/llama_utopic.jpg");
+    background-position: 0;
+    background-size: cover;
+    color: #D9AD5B;
+    display: flex;
+} 
+.header__overlay{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #0D0D0De3;
+    position: absolute;
+    z-index: 1; 
+}
+.header__item-container{
+    position: relative;
+    z-index: 10;
+    margin: auto;
+    text-align: center;
+    max-width: 700px
+}
+.header__item-container p{
+    text-wrap: balance;
+}
+h1{
+    margin:0;
+    letter-spacing: 0.2rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 5rem
+}
+/*--- navbar section ---*/
+.nav{
+    background-color: #D9AD5B;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 3px 10px 3px 5px;
+    position: sticky;
+    top: 0px;
+    z-index: 40;
+    margin-bottom: 2px;
+    box-shadow: 0px 0px 30px #0D0D0D;
+}
+.nav__ul-container, .nav__img-container{
+    flex-grow: 1;
+    margin: auto;
+    text-align: center;
+}
+.nav__ul{
+    margin: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+}
+.nav__item{
+    list-style: none;
+}
+.nav__link{
+    text-decoration: none;
+    color: #011526;
+    display: inline-block;
+    padding: 8px 12px;
+    margin: 10px 8px;
+    border-radius: 0;
+    transition: backgroud-color 0.3s, border-radius 0.24s, outline 0.2s, outline-offset 0.2s;
+    outline: 0;
+    outline-offset: 0;
+
+}
+.goat_img{
+    max-width: 70px;
+}
+
+.nav__link:hover{
+    background-color:#011526ae;
+    color: #A66F2D;
+    border-radius: 20px;
+    outline: 2px solid #011526;
+    outline-offset: -7px
+
+}
+
+.link--login{
+    background-color: #0D0D0D;
+    color: #D9AD5B;
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 8px 24px
+}
+.link--login:hover{
+    background-color: #2b2b2b;
+    outline: none;
+}
+/*--main--*/
+h2{
+    font-size: 30px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    text-shadow: 0px 10px 20px #000;
+}
+.main-wrapper{
+    display: flex;
+    flex-grow: 1;
+    max-width: 1020px;
+    background-color: #011526;
+}
+h1, h2, h3, h4{
+    text-wrap: balance;
+}
+aside, main{
+    padding: 10px 20px;
+}
+main{
+    flex-grow: 1;
+}
+.main-wrapper aside{
+    flex-grow: 1;
+}
+.aside__navbar{
+    min-width: 10rem;
+    text-align: center;
+}
+.aside__navbar ul{
+    padding: 0;
+}
+.aside__navbar li{
+    box-sizing: border-box;
+    list-style: none;
+    padding-bottom: 10px;
+}
+.aside__navbar a{
+    color:#D9AD5B;
+    text-decoration: none;
+    display: inline-block;
+    padding: 6px 10px;
+}
+aside:first-child{
+    min-width: 10rem
+}
+.aside__link:hover{
+    box-sizing: border-box;
+    color: #A66F2D;
+    border-bottom: 3px solid #593202;
+}
+footer{
+    margin-top: auto;
+    background-color: #0D0D0D;
+    color: #A66F2D;
+    text-align: center;
+    padding: 40px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+@media screen and (max-width: 800px){
+    aside:first-child {
+        display: none;
+    }
+    .aside__navbar{
+        order: 0;
+        min-width: 8rem;
+    }
+    main{
+        order: 1
+    }
+}
+@media screen and (max-width:500px){
+    .header{
+        min-height: 100vh;
+        width: 100%;
+        box-sizing: border-box;
+        background-image: url("photos/llama_utopic.jpg");
+        background-position: -250px 0;
+        background-size: cover;
+        color: #D9AD5B;
+        display: flex;
+    } 
+    .main-wrapper{
+        flex-direction: column;
+    }
+
+}
